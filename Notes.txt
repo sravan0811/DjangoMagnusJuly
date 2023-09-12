@@ -1,1 +1,7 @@
 1) Create the Pycharm Project
+2) Install the django application
+    pip install django
+3) Create the Django Project with some name
+    django-admin startproject project_name
+4) Change the directory to django directory
+    cd MagnusDjango
