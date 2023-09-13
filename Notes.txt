@@ -5,3 +5,31 @@
     django-admin startproject project_name
 4) Change the directory to django directory
     cd MagnusDjango
+5) Manage.py is the core part of Django for any execution.
+6) Create the Application inside Django Project Directory
+    python manage.py startapp MyApp1
+7) go to settings.py
+    go to Installed_Apps under that the app the application name as value.
+8) Create the urls.py in application package
+9) go to project urls and configure the application urls.
+    from django.contrib import admin
+    from django.urls import path,include
+
+    urlpatterns = [
+        path('admin/', admin.site.urls),
+        path('',include("MyApp1.urls")),
+    ]
+10) Create the templates directory under project directory
+11) Create the static directory under project directory
+12) Configure the templates directory in project settings
+    go to settings near to BASE_DIR variable
+    import os
+    TEMPLATES_DIR = os.path.join(BASE_DIR,'templates')
+    STATIC_DIR = os.path.join(BASE_DIR,'static')
+13) go to templates variable in settings file
+    add the TEMPLATES_DIR inside DIRS.
+14) go to the end of the settings file near to STATIC_URL
+    under that add the below code
+    STATICFILES_DIRS = [
+        STATIC_DIR,
+    ]
