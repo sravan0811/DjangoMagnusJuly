@@ -33,3 +33,8 @@
     STATICFILES_DIRS = [
         STATIC_DIR,
     ]
+
+pip install mysqlclient
+15) python manage.py makemigrations
+    python manage.py migrate
+
