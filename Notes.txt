@@ -38,3 +38,14 @@ pip install mysqlclient
 15) python manage.py makemigrations
     python manage.py migrate
 
+Scenario1:
+------------------
+Insert some data into Database Table and Access it from Python and Display it in a webpage(HTML)
+
+creating the django admin details
+    python manage.py createsuperuser
+
+table --- models
+Views
+HTML
+

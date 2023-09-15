@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Data</title>
+</head>
+<body>
+    <h1>Employee Info</h1>
+    <table border="1">
+        <thead>
+            <th>EMPNO</th>
+            <th>ENAME</th>
+            <th>SAL</th>
+            <th>DEPTNO</th>
+        </thead>
+        {% for emp in employee %}
+        <tr>
+            <td>{{ emp.empno }}</td>
+            <td>{{ emp.ename }}</td>
+            <td>{{ emp.sal }}</td>
+            <td>{{ emp.deptno }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
