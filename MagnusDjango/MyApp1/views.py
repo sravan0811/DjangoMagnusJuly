@@ -4,8 +4,7 @@ from .models import Employee
 from .forms import UserForm,EmpForm
 # Create your views here.
 def home(request):
-    data = {"name":"Sravan"}
-    return render(request,'MyApp1/Home.html', context=data)
+    return render(request,'MyApp1/base.html')
 
 def help(request):
     return HttpResponse("<h1>This is the Help Page</h1>")

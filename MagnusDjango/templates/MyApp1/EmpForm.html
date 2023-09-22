@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Employee Form Page</title>
-</head>
-<body>
+{% extends 'MyApp1/base.html' %}
+{% load static %}
+{% block content %}
     <form method="post">
         {{ form.as_p }}
         {% csrf_token %}
         <input type="submit" value="Insert">
     </form>
-</body>
-</html>
+{% endblock content %}

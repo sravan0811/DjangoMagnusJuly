@@ -56,6 +56,14 @@ Forms
 abc@gmail.com
 
 
+Relative Template URL
+    Template Inheritance
+    Access one html page in other html
+Authentication
+    Register
+    Login
+    Logout
+
 
 
 
