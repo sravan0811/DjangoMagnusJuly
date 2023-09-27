@@ -64,6 +64,19 @@ Authentication
     Login
     Logout
 
+ ---------
+ Web Service
+ -------------------------
+pip install djangorestframework
+
+
+
+
+
+
+
+
+
 
 
 

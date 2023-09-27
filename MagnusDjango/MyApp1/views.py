@@ -1,8 +1,16 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Employee
+from .models import Employee,Car
 from .forms import UserForm,EmpForm
+from rest_framework import viewsets
+from .serializers import CarSerializer
 # Create your views here.
+
+class CarViewSet(viewsets.ModelViewSet):
+    queryset = Car.objects.all().order_by('Brand')
+    serializer_class = CarSerializer
+
+
 def home(request):
     return render(request,'MyApp1/base.html')
 
